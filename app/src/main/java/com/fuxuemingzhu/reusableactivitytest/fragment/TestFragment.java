@@ -50,7 +50,7 @@ public class TestFragment extends BaseFragment {
             @Override
             public void onClick(View view) {
                 Bundle data = new Bundle();
-                data.putString("title", "fragment");
+                data.putString("title", "ReUsableActivity");
                 data.putInt("fragmentType", order + 1);
                 Intent intent = new Intent();
                 intent.setClass(TestFragment.this.getActivity(), ReUsableActivity.class);

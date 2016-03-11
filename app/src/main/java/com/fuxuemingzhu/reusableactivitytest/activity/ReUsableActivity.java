@@ -85,7 +85,7 @@ public class ReUsableActivity extends BaseFragmentActivity {
 
     @Override
     protected void initEvents() {
-        toolbar.setTitle(title + order);
+        toolbar.setTitle(title + " " + order);
 
     }
 

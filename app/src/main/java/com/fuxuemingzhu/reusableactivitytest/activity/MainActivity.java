@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle("MainActivity");
         setSupportActionBar(toolbar);
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Bundle data = new Bundle();
-                data.putString("title", "fragment");
+                data.putString("title", "ReUsableActivity");
                 data.putInt("fragmentType", 1);
                 Intent intent = new Intent();
                 intent.setClass(MainActivity.this, ReUsableActivity.class);
