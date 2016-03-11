@@ -27,15 +27,14 @@
         android:id="@+id/ll_common"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <RelativeLayout
             android:id="@+id/rl_common"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-
-            <include layout="@layout/content_main"/>
 
         </RelativeLayout>
     </LinearLayout>

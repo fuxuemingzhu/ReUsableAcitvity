@@ -5,8 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
-import android.widget.Button;
+import android.util.Log;
 import android.widget.LinearLayout;
 
 import com.fuxuemingzhu.reusableactivitytest.R;
@@ -30,7 +29,6 @@ import com.fuxuemingzhu.reusableactivitytest.fragment.TestFragment;
 public class ReUsableActivity extends BaseFragmentActivity {
 
     private LinearLayout ll_common;
-    private Button btn_new;
     private Toolbar toolbar;
     private BaseFragment fragment;
 
@@ -56,6 +54,8 @@ public class ReUsableActivity extends BaseFragmentActivity {
         fragmentType = data.getInt("fragmentType");
         order = fragmentType;
         title = data.getString("title");
+        Log.i("fragmentType", "" + fragmentType);
+        Log.i("title", title);
         switch (fragmentType) {
             case 0:
                 title = "空白界面";
@@ -86,20 +86,7 @@ public class ReUsableActivity extends BaseFragmentActivity {
     @Override
     protected void initEvents() {
         toolbar.setTitle(title + order);
-        order++;
-        btn_new = (Button) findViewById(R.id.btn_content_main);
-        btn_new.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Bundle data = new Bundle();
-                data.putString("title", "fragment");
-                data.putInt("fragmentType", order);
-                Intent intent = new Intent();
-                intent.setClass(ReUsableActivity.this, ReUsableActivity.class);
-                intent.putExtras(data);
-                startActivity(intent);
-            }
-        });
+
     }
 
     @Override
