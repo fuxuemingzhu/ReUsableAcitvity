@@ -13,6 +13,9 @@ import android.widget.Button;
 
 import com.fuxuemingzhu.reusableactivitytest.R;
 
+/**
+ * Main
+ */
 public class MainActivity extends AppCompatActivity {
 
     private Button btn_new;

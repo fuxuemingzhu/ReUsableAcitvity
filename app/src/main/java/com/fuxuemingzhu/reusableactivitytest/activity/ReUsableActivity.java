@@ -14,7 +14,6 @@ import com.fuxuemingzhu.reusableactivitytest.app.BaseFragmentActivity;
 import com.fuxuemingzhu.reusableactivitytest.fragment.TestFragment;
 
 /**
- * 包名：com.ccmzchuang.zixiba.activity
  * 类描述：
  * 创建人：Administrator
  * 邮箱：fuxuemingzhu@163.com
