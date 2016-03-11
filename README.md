@@ -52,6 +52,10 @@
 
 ![](https://github.com/fuxuemingzhu/fuxuemingzhu.github.io/blob/master/images/ReUsableActivity-Using/project.JPG?raw=true)
 
+## 结语
+
+尽可能进行代码复用，来精简项目，这个是项目中的一个小小的经验，分享出来，希望大家能提供一个更好的解决方案。
+
 ## Lincence
 
 > Copyright 2016 Fuxuemingzhu
